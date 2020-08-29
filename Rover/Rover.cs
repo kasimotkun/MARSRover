@@ -63,10 +63,10 @@
         }
         
         if ( this.x < lowerX | this.y < lowerY)
-            throw new System.ArgumentException("the final position is the out of the lower-left coordinates are 0,0. Please search for the rover in out space!");         
+            throw new System.ArgumentException("the final position is the out of the lower-left coordinates are 0,0. Please search for the rover in outer space!");         
         
         if ( this.x > _upperX | this.y > _upperY)
-            throw new System.ArgumentException("the final position is the out of the upper-right coordinates are "+_upperX+","+_upperY+". Please search for the rover in out space!");
+            throw new System.ArgumentException("the final position is the out of the upper-right coordinates are "+_upperX+","+_upperY+". Please search for the rover in outer space!");
          
     }
     private void process(char command) {
