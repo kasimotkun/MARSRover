@@ -551,7 +551,7 @@ this.FeatureBackground();
 #line hidden
 #line 52
   testRunner.Then("the user is presented with an error message \'the final position is the out of the" +
-                        " upper-right coordinates are 5,5. Please search for the rover in out space!\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+                        " upper-right coordinates are 5,5. Please search for the rover in outer space!\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -595,7 +595,7 @@ this.FeatureBackground();
 #line hidden
 #line 57
   testRunner.Then("the user is presented with an error message \'the final position is the out of the" +
-                        " upper-right coordinates are 5,5. Please search for the rover in out space!\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+                        " upper-right coordinates are 5,5. Please search for the rover in outer space!\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -639,7 +639,7 @@ this.FeatureBackground();
 #line hidden
 #line 62
   testRunner.Then("the user is presented with an error message \'the final position is the out of the" +
-                        " lower-left coordinates are 0,0. Please search for the rover in out space!\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+                        " lower-left coordinates are 0,0. Please search for the rover in outer space!\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -683,7 +683,7 @@ this.FeatureBackground();
 #line hidden
 #line 67
   testRunner.Then("the user is presented with an error message \'the final position is the out of the" +
-                        " lower-left coordinates are 0,0. Please search for the rover in out space!\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+                        " lower-left coordinates are 0,0. Please search for the rover in outer space!\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
