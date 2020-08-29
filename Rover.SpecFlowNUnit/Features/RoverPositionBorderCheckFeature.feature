@@ -49,21 +49,21 @@ Scenario: set the rover position lower than the lower-left coordinates of the pl
 Scenario: move the rover inside the upper and lower coordinates - out of upperY 
   Given a new rover with position x=5, y=4 and facing is 'N'
   When I move the rover with 'MM' commands
-  Then the user is presented with an error message 'the final position is the out of the upper-right coordinates are 5,5. Please search for the rover in out space!'
+  Then the user is presented with an error message 'the final position is the out of the upper-right coordinates are 5,5. Please search for the rover in outer space!'
 
 Scenario: move the rover inside the upper and lower coordinates - out of upperX
   Given a new rover with position x=4, y=5 and facing is 'E'
   When I move the rover with 'MM' commands
-  Then the user is presented with an error message 'the final position is the out of the upper-right coordinates are 5,5. Please search for the rover in out space!'
+  Then the user is presented with an error message 'the final position is the out of the upper-right coordinates are 5,5. Please search for the rover in outer space!'
 
 Scenario: move the rover inside the upper and lower coordinates - out of lowerY
   Given a new rover with position x=4, y=0 and facing is 'S'
   When I move the rover with 'MM' commands
-  Then the user is presented with an error message 'the final position is the out of the lower-left coordinates are 0,0. Please search for the rover in out space!'
+  Then the user is presented with an error message 'the final position is the out of the lower-left coordinates are 0,0. Please search for the rover in outer space!'
 
 Scenario: move the rover inside the upper and lower coordinates - out of lowerX
   Given a new rover with position x=0, y=4 and facing is 'W'
   When I move the rover with 'MM' commands
-  Then the user is presented with an error message 'the final position is the out of the lower-left coordinates are 0,0. Please search for the rover in out space!'
+  Then the user is presented with an error message 'the final position is the out of the lower-left coordinates are 0,0. Please search for the rover in outer space!'
 
 
