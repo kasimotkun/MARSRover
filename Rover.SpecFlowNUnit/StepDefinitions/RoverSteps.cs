@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using NUnit.Framework;
 using Rover.SpecFlowNUnit.Drivers;
 using TechTalk.SpecFlow;
@@ -10,6 +10,9 @@ namespace Rover.SpecFlowNUnit.StepDefinitions
     {
         private readonly RoverDriver _driver;
 
+        private int _upperX=0;
+        private int _upperY=0;
+
         private string errorMessage = "";
 
         public RoverSteps(RoverDriver driver)
@@ -17,17 +20,19 @@ namespace Rover.SpecFlowNUnit.StepDefinitions
             _driver = driver ?? throw new ArgumentNullException(nameof(driver));
         }
 
-        [Given(@"a new rover with x=(.*), y=(.*) the upper-right coordinates of the plateau")]
-        public void GivenANewRover(int x, int y)
+        [Given(@"x=(.*), y=(.*) the upper-right coordinates of the plateau")]
+        public void GivenTheUpperPosition(int x, int y)
         {
-            _driver.NewRover(x, y);
+            this._upperX=x;
+            this._upperY=y;
         }
 
-        [Given(@"the rover position with x=(.*), y=(.*) and facing is '(.*)'")]
+        [Given(@"a new rover with position x=(.*), y=(.*) and facing is '(.*)'")]
         public void GivenTheRoverPosition(int x, int y, string facing)
         {
             try
             {
+                _driver.NewRover(this._upperX, this._upperY);
                 _driver.SetRoverPosition(x, y, facing);
             }
             catch (Exception err)
